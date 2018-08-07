@@ -3,7 +3,7 @@ import importlib
 
 from px2graph.util.loader import Loader
 
-def init_task(opt, train_flag):
+def init_task(opt, train_flag, return_dataset=False):
     # Initialize dataset
     print("Initializing dataset and task...")
     ds = importlib.import_module('px2graph.data.%s.ref' % opt.dataset)
@@ -20,7 +20,10 @@ def init_task(opt, train_flag):
     label = new_sample[task.num_inputs:-1]
     sample_idx = new_sample[-1]
 
-    return task, loader, inp, label, sample_idx
+    if not return_dataset:
+        return task, loader, inp, label, sample_idx
+    else:
+        return task, loader, inp, label, sample_idx, ds
 
 
 def average_gradients(tower_grads):
