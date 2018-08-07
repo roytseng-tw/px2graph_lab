@@ -28,6 +28,8 @@ def main():
     sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True, gpu_options=tf.GPUOptions(allow_growth=True)))
     sess.run(tf.global_variables_initializer())
 
+    opt.idx_ref['test'] = opt.idx_ref['test'][:20]
+
     # Start data loading threads
     loader.start_threads(sess)
 
