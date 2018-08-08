@@ -23,7 +23,7 @@ Tensorflow training pipeline for:
 - graphviz
 - simplejson (for Visual Genome driver)
 
-Make sure to add the parent directory of px2graph to your PYTHONPATH.
+Make sure to add the parent directory of px2graph_lab to your PYTHONPATH.
 
 #### Set up munkres-tensorflow:
 

@@ -9,7 +9,7 @@ import px2graph_lab
 from px2graph_lab.util import calc, img
 import px2graph_lab.data.genome.ref as ds
 
-exp_dir = os.path.join(os.path.dirname(px2graph.__file__),'exp')
+exp_dir = os.path.join(os.path.dirname(px2graph_lab.__file__),'exp')
 
 def load_predictions(pred_file):
     pred_file = os.path.join(exp_dir, pred_file + '.h5')
@@ -103,7 +103,7 @@ def main():
         pred_dir = sys.argv[1]
     except:
         print("Please provide a prediction filename (ex: test_exp_001/train_preds)")
-        print("File location is assumed to be in px2graph/exp/, no .h5 extension necessary")
+        print("File location is assumed to be in px2graph_lab/exp/, no .h5 extension necessary")
         return
 
     preds = load_predictions(pred_dir)

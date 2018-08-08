@@ -6,11 +6,11 @@ from px2graph_lab.util.loader import Loader
 def init_task(opt, train_flag, return_dataset=False):
     # Initialize dataset
     print("Initializing dataset and task...")
-    ds = importlib.import_module('px2graph.data.%s.ref' % opt.dataset)
+    ds = importlib.import_module('px2graph_lab.data.%s.ref' % opt.dataset)
     ds.initialize(opt) # Set up training/val split in ds.initialize
 
     # Setup task
-    task = importlib.import_module('px2graph.task.' + opt.task)
+    task = importlib.import_module('px2graph_lab.task.' + opt.task)
     task = task.Task(opt, ds)
 
     # Data loader
@@ -66,7 +66,7 @@ def init_model(opt, task, inp, label, sample_idx, train_flag):
     print("Defining computation graph...")
 
     global_step = tf.get_variable('global_step', [], tf.int32, trainable=False)
-    model = importlib.import_module('px2graph.models.' + opt.model)
+    model = importlib.import_module('px2graph_lab.models.' + opt.model)
     opt_fn = tf.train.__dict__[opt.optimizer]
     opt_args = []
     lr = tf.placeholder(tf.float32, [])

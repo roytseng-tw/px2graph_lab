@@ -7,7 +7,7 @@ def initialize(inp, opt, train_flag):
     """ Initialize pixels to graph network architecture.
 
     This is the full pipeline to output a set of object and relationship
-    detections. Parsing the network output is defined in px2graph.task.graph.
+    detections. Parsing the network output is defined in px2graph_lab.task.graph.
 
     Args:
         inp: List of all network inputs which includes: the input image; box
