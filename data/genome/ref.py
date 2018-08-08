@@ -3,7 +3,7 @@ import scipy.misc
 import h5py
 import os
 
-from px2graph.data.genome.driver import local as vg
+from px2graph_lab.data.genome.driver import local as vg
 
 data_dir = os.path.dirname(__file__)
 class_labels, relationships = [], []

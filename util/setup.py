@@ -1,7 +1,7 @@
 import tensorflow as tf
 import importlib
 
-from px2graph.util.loader import Loader
+from px2graph_lab.util.loader import Loader
 
 def init_task(opt, train_flag, return_dataset=False):
     # Initialize dataset

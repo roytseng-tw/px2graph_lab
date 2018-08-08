@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-from px2graph.models import layers
+from px2graph_lab.models import layers
 
 #cnv = layers.res_block
 cnv = lambda x,y: layers.cnv(x,y,3)

@@ -8,9 +8,9 @@ import skimage as skim
 import skimage.io as skio
 from tqdm import tqdm
 
-from px2graph.util import setup, img
-from px2graph.opts import parse_command_line
-from px2graph.util import viz
+from px2graph_lab.util import setup, img
+from px2graph_lab.opts import parse_command_line
+from px2graph_lab.util import viz
 
 
 def main():

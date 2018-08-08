@@ -5,9 +5,9 @@ from easydict import EasyDict as edict
 from tqdm import tqdm
 from graphviz import Digraph
 
-import px2graph
-from px2graph.util import calc, img
-import px2graph.data.genome.ref as ds
+import px2graph_lab
+from px2graph_lab.util import calc, img
+import px2graph_lab.data.genome.ref as ds
 
 exp_dir = os.path.join(os.path.dirname(px2graph.__file__),'exp')
 

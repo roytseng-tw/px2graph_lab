@@ -3,9 +3,9 @@ import numpy as np
 import math
 import scipy.misc
 
-from px2graph.task.base import Task as ParentTask
-from px2graph.util import img, calc
-from px2graph.util.rcnn.generate_anchors import generate_anchors
+from px2graph_lab.task.base import Task as ParentTask
+from px2graph_lab.util import img, calc
+from px2graph_lab.util.rcnn.generate_anchors import generate_anchors
 
 class Task(ParentTask):
     """ Pixels to graph task functions.

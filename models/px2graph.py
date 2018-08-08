@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-from px2graph.models import layers, hg
+from px2graph_lab.models import layers, hg
 
 def initialize(inp, opt, train_flag):
     """ Initialize pixels to graph network architecture.

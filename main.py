@@ -3,8 +3,8 @@ import numpy as np
 import h5py
 from tqdm import tqdm
 
-from px2graph.util import setup
-from px2graph.opts import parse_command_line
+from px2graph_lab.util import setup
+from px2graph_lab.opts import parse_command_line
 
 def main():
 

@@ -1,7 +1,7 @@
-from px2graph.data.genome.driver.models import Image, Object, Attribute, Relationship
-from px2graph.data.genome.driver.models import Region, Graph, QA, QAObject, Synset
+from px2graph_lab.data.genome.driver.models import Image, Object, Attribute, Relationship
+from px2graph_lab.data.genome.driver.models import Region, Graph, QA, QAObject, Synset
 import json
-import px2graph.data.genome.driver.utils as utils
+import px2graph_lab.data.genome.driver.utils as utils
 import os, gc
 
 """

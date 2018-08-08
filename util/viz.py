@@ -5,7 +5,7 @@ from graphviz import Digraph
 import matplotlib.pyplot as plt
 import numpy as np
 
-from px2graph.util.colormap import colormap
+from px2graph_lab.util.colormap import colormap
 
 
 def visualize_preds(inp_img, obj_preds, rel_preds, dataset, output_name, output_dir,
